@@ -2,14 +2,15 @@
   "name": "CommunicationsMiningDispatcherDirectToApi",
   "projectId": "bab87e2e-4728-4904-9e81-49ea2b8a94a9",
   "description": "Communications Mining Dispatcher Template",
-  "main": "Main.xaml",
+  "main": "Dispatcher.xaml",
   "dependencies": {
     "UiPath.CodedWorkflows": "[24.10.1]",
     "UiPath.CommunicationsMining.Activities": "[1.2.2]",
     "UiPath.Cryptography.Activities": "[1.6.1]",
     "UiPath.Excel.Activities": "[2.24.2]",
-    "UiPath.System.Activities": "[24.12.1-preview]",
+    "UiPath.System.Activities": "[24.10.8]",
     "UiPath.Testing.Activities": "[24.10.1]",
+    "UiPath.UIAutomation.Activities": "[24.10.14]",
     "UiPath.WebAPI.Activities": "[1.21.0]"
   },
   "webServices": [],
@@ -51,8 +52,8 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "Main.xaml",
-      "uniqueId": "cc64e62d-fdd5-4cf6-a848-6c1a4e04d0b2",
+      "filePath": "Dispatcher.xaml",
+      "uniqueId": "b5700dc9-bc22-4638-bfab-84bd2b3bef90",
       "input": [],
       "output": []
     }

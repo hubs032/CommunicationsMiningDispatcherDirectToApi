@@ -113,7 +113,7 @@
       <AssemblyReference>UiPath.System.Activities.Api</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="CreateQueueItem" sap:VirtualizedContainerService.HintSize="1528,1752" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="CreateQueueItem" sap:VirtualizedContainerService.HintSize="1722,2761" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="reference" />
     </Sequence.Variables>
@@ -122,8 +122,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message Create Queue Item" sap:VirtualizedContainerService.HintSize="480,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[String.Format(in_config(&quot;LogMessage_CreateQueueItem&quot;).ToString(), in_DestinationQueueName, in_DestinationFolderPath)]" />
-    <If Condition="[String.IsNullOrEmpty( in_DestinationQueueName.Trim())]" DisplayName="If queue Name not provided" sap:VirtualizedContainerService.HintSize="480,432" sap2010:WorkflowViewState.IdRef="If_3">
+    <ui:LogMessage DisplayName="Log Message Create Queue Item" sap:VirtualizedContainerService.HintSize="462,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[String.Format(in_config(&quot;LogMessage_CreateQueueItem&quot;).ToString(), in_DestinationQueueName, in_DestinationFolderPath)]" />
+    <If Condition="[String.IsNullOrEmpty( in_DestinationQueueName.Trim())]" DisplayName="If queue Name not provided" sap:VirtualizedContainerService.HintSize="462,400" sap2010:WorkflowViewState.IdRef="If_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -150,13 +150,13 @@
         </Sequence>
       </If.Else>
     </If>
-    <ui:Comment DisplayName="" sap:VirtualizedContainerService.HintSize="480,107" sap2010:WorkflowViewState.IdRef="Comment_2" Text="// As comment uids can be longer than the maximum reference length for orchestrator" />
-    <uca:KeyedHashText Encoding="{x:Null}" KeySecureString="{x:Null}" Algorithm="SHA256" DisplayName="Hash Comment Uid" sap:VirtualizedContainerService.HintSize="480,172" sap2010:WorkflowViewState.IdRef="KeyedHashText_1" Input="[in_communication.Comment.Uid]" Key="DO NOT CHANGE THIS VALUE" KeyEncodingString="65001" KeyInputModeSwitch="Key" Result="[reference]" />
-    <ui:Comment sap:VirtualizedContainerService.HintSize="480,203" sap2010:WorkflowViewState.IdRef="Comment_4" Text="// TO-DO: Insert logic to pull additional details on comm and put into queue item using helper functions.&#xD;&#xA;&#xD;&#xA;https://docs.uipath.com/activities/other/latest/communications-mining/helper-functions&#xD;&#xA;" />
-    <ui:RetryScope DisplayName="Retry Add Queue Item Stream" sap:VirtualizedContainerService.HintSize="480,642" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="[CInt(in_Config(&quot;RetryNumberCreateQueueItem&quot;))]">
+    <ui:Comment DisplayName="" sap:VirtualizedContainerService.HintSize="462,107" sap2010:WorkflowViewState.IdRef="Comment_2" Text="// As comment uids can be longer than the maximum reference length for orchestrator" />
+    <uca:KeyedHashText Encoding="{x:Null}" KeySecureString="{x:Null}" Algorithm="SHA256" DisplayName="Hash Comment Uid" sap:VirtualizedContainerService.HintSize="462,172" sap2010:WorkflowViewState.IdRef="KeyedHashText_1" Input="[in_communication.Comment.Uid]" Key="DO NOT CHANGE THIS VALUE" KeyEncodingString="65001" KeyInputModeSwitch="Key" Result="[reference]" />
+    <ui:Comment sap:VirtualizedContainerService.HintSize="462,203" sap2010:WorkflowViewState.IdRef="Comment_4" Text="// TO-DO: Insert logic to pull additional details on comm and put into queue item using helper functions.&#xA;&#xA;https://docs.uipath.com/activities/other/latest/communications-mining/helper-functions&#xA;" />
+    <ui:RetryScope DisplayName="Retry Add Queue Item Stream" sap:VirtualizedContainerService.HintSize="462,1683" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="[CInt(in_Config(&quot;RetryNumberCreateQueueItem&quot;))]">
       <ui:RetryScope.ActivityBody>
         <ActivityAction>
-          <TryCatch DisplayName="Try and add queue item" sap:VirtualizedContainerService.HintSize="438,444" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+          <TryCatch DisplayName="Try and add queue item" sap:VirtualizedContainerService.HintSize="420,1485" sap2010:WorkflowViewState.IdRef="TryCatch_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -164,7 +164,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <TryCatch.Try>
-              <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Add Queue Item to Destination Queue" FolderPath="[in_DestinationFolderPath]" sap:VirtualizedContainerService.HintSize="334,194" sap2010:WorkflowViewState.IdRef="AddQueueItem_1" Priority="Normal" QueueType="[in_DestinationQueueName]" Reference="[reference]">
+              <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Add Queue Item to Destination Queue" FolderPath="[in_DestinationFolderPath]" sap:VirtualizedContainerService.HintSize="418,194" sap2010:WorkflowViewState.IdRef="AddQueueItem_1" Priority="Normal" QueueType="[in_DestinationQueueName]" Reference="[reference]">
                 <ui:AddQueueItem.ItemInformation>
                   <InArgument x:TypeArguments="x:String" x:Key="CommunicationData">[Newtonsoft.Json.JsonConvert.SerializeObject(in_communication,new JsonSerializerSettings() with{.ReferenceLoopHandling = ReferenceLoopHandling.Ignore })]</InArgument>
                   <InArgument x:TypeArguments="x:String" x:Key="Labels">[Newtonsoft.Json.JsonConvert.SerializeObject(in_communication.Prediction.GetLabelExtractionsSorted,new JsonSerializerSettings() with{.ReferenceLoopHandling = ReferenceLoopHandling.Ignore })]</InArgument>
@@ -184,13 +184,13 @@
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Log and Rethrow General Exception" sap:VirtualizedContainerService.HintSize="416,283" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                  <Sequence DisplayName="Log and Rethrow General Exception" sap:VirtualizedContainerService.HintSize="418,281" sap2010:WorkflowViewState.IdRef="Sequence_18">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:LogMessage DisplayName="Log Message Get transaction item faulted General" sap:VirtualizedContainerService.HintSize="382,173" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[String.Format(in_config(&quot;LogMessage_CreateQueueItemFailed&quot;).ToString(), exception.Message, exception.Source)]">
+                    <ui:LogMessage DisplayName="Log Message Get transaction item faulted General" sap:VirtualizedContainerService.HintSize="384,173" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[String.Format(in_config(&quot;LogMessage_CreateQueueItemFailed&quot;).ToString(), exception.Message, exception.Source)]">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -198,7 +198,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:LogMessage>
-                    <Rethrow DisplayName="Rethrow Get transaction item faulted General" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="Rethrow_4" />
+                    <Rethrow DisplayName="Rethrow Get transaction item faulted General" sap:VirtualizedContainerService.HintSize="384,48" sap2010:WorkflowViewState.IdRef="Rethrow_4" />
                   </Sequence>
                 </ActivityAction>
               </Catch>
@@ -213,7 +213,7 @@
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ui:OrchestratorHttpException" Name="exception" />
                   </ActivityAction.Argument>
-                  <If Condition="[exception.Message.EndsWith(&quot;1016&quot;)]" DisplayName="If duplicate reference" sap:VirtualizedContainerService.HintSize="450,750" sap2010:WorkflowViewState.IdRef="If_7">
+                  <If Condition="[exception.Message.EndsWith(&quot;1016&quot;)]" DisplayName="If duplicate reference" sap:VirtualizedContainerService.HintSize="418,718" sap2010:WorkflowViewState.IdRef="If_7">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -253,6 +253,15 @@
                 </ActivityAction>
               </Catch>
             </TryCatch.Catches>
+            <TryCatch.Finally>
+              <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="418,89" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Sequence>
+            </TryCatch.Finally>
           </TryCatch>
         </ActivityAction>
       </ui:RetryScope.ActivityBody>

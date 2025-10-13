@@ -3,25 +3,9 @@
     "UiPath.Core.Activities.AddAndProcessQueueItem": [
       {
         "Type": "queue",
-        "Values": {
-          "name": {
-            "Value": "QueueType",
-            "ValueSource": "Property"
-          },
-          "folderPath": {
-            "Value": "FolderPath",
-            "ValueSource": "Property"
-          }
-        },
-        "DefaultValueSource": "Default"
-      }
-    ],
-    "UiPath.Core.Activities.AddQueueItem": [
-      {
-        "Type": "queue",
         "PublishNullValues": false,
         "Key": {
-          "Value": "BindingsKey",
+          "Value": "N/A",
           "ValueSource": "Property"
         },
         "Values": {
@@ -34,22 +18,26 @@
             "ValueSource": "Property"
           }
         },
-        "Arguments": {
-          "ActivityName": {
-            "Value": "DisplayName",
+        "SubBindings": [],
+        "DefaultValueSource": "Property"
+      }
+    ],
+    "UiPath.Core.Activities.AddQueueItem": [
+      {
+        "Type": "queue",
+        "PublishNullValues": false,
+        "Key": {
+          "Value": "N/A",
+          "ValueSource": "Property"
+        },
+        "Values": {
+          "folderPath": {
+            "Value": "FolderPath",
             "ValueSource": "Property"
           },
-          "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "DisplayLabel": {
-            "Value": "FullName",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
-            "ValueSource": "Constant"
+          "name": {
+            "Value": "QueueType",
+            "ValueSource": "Property"
           }
         },
         "SubBindings": [],
@@ -61,7 +49,7 @@
         "Type": "queue",
         "PublishNullValues": false,
         "Key": {
-          "Value": "BindingsKey",
+          "Value": "N/A",
           "ValueSource": "Property"
         },
         "Values": {
@@ -72,24 +60,6 @@
           "name": {
             "Value": "QueueType",
             "ValueSource": "Property"
-          }
-        },
-        "Arguments": {
-          "ActivityName": {
-            "Value": "DisplayName",
-            "ValueSource": "Property"
-          },
-          "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "DisplayLabel": {
-            "Value": "FullName",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
-            "ValueSource": "Constant"
           }
         },
         "SubBindings": [],
@@ -117,7 +87,7 @@
         "Type": "queue",
         "PublishNullValues": false,
         "Key": {
-          "Value": "BindingsKey",
+          "Value": "N/A",
           "ValueSource": "Property"
         },
         "Values": {
@@ -130,24 +100,6 @@
             "ValueSource": "Property"
           }
         },
-        "Arguments": {
-          "ActivityName": {
-            "Value": "DisplayName",
-            "ValueSource": "Property"
-          },
-          "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "DisplayLabel": {
-            "Value": "FullName",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
-            "ValueSource": "Constant"
-          }
-        },
         "SubBindings": [],
         "DefaultValueSource": "Property"
       }
@@ -157,27 +109,13 @@
         "Type": "queue",
         "PublishNullValues": false,
         "Key": {
-          "Value": "BindingsKey",
+          "Value": "N/A",
           "ValueSource": "Property"
         },
         "Values": {
           "folderPath": {
             "Value": "FolderPath",
             "ValueSource": "Property"
-          }
-        },
-        "Arguments": {
-          "ActivityName": {
-            "Value": "DisplayName",
-            "ValueSource": "Property"
-          },
-          "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "DisplayLabel": {
-            "Value": "FullName",
-            "ValueSource": "Constant"
           }
         },
         "SubBindings": [],
@@ -189,7 +127,7 @@
         "Type": "BusinessRule",
         "PublishNullValues": false,
         "Key": {
-          "Value": "BindingsKey",
+          "Value": "N/A",
           "ValueSource": "Property"
         },
         "Values": {
@@ -202,20 +140,6 @@
             "ValueSource": "Property"
           }
         },
-        "Arguments": {
-          "ActivityName": {
-            "Value": "DisplayName",
-            "ValueSource": "Property"
-          },
-          "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "DisplayLabel": {
-            "Value": "FullName",
-            "ValueSource": "Constant"
-          }
-        },
         "SubBindings": [],
         "DefaultValueSource": "Property"
       }
@@ -225,27 +149,13 @@
         "Type": "process",
         "PublishNullValues": false,
         "Key": {
-          "Value": "BindingsKey",
+          "Value": "N/A",
           "ValueSource": "Property"
         },
         "Values": {
           "folderPath": {
             "Value": "FolderPath",
             "ValueSource": "Property"
-          }
-        },
-        "Arguments": {
-          "ActivityName": {
-            "Value": "DisplayName",
-            "ValueSource": "Property"
-          },
-          "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "DisplayLabel": {
-            "Value": "FullName",
-            "ValueSource": "Constant"
           }
         },
         "SubBindings": [],
@@ -257,7 +167,7 @@
         "Type": "queue",
         "PublishNullValues": false,
         "Key": {
-          "Value": "BindingsKey",
+          "Value": "N/A",
           "ValueSource": "Property"
         },
         "Values": {
@@ -270,24 +180,6 @@
             "ValueSource": "Property"
           }
         },
-        "Arguments": {
-          "ActivityName": {
-            "Value": "DisplayName",
-            "ValueSource": "Property"
-          },
-          "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "DisplayLabel": {
-            "Value": "FullName",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
-            "ValueSource": "Constant"
-          }
-        },
         "SubBindings": [],
         "DefaultValueSource": "Property"
       }
@@ -297,7 +189,7 @@
         "Type": "queue",
         "PublishNullValues": false,
         "Key": {
-          "Value": "BindingsKey",
+          "Value": "N/A",
           "ValueSource": "Property"
         },
         "Values": {
@@ -310,24 +202,6 @@
             "ValueSource": "Property"
           }
         },
-        "Arguments": {
-          "ActivityName": {
-            "Value": "DisplayName",
-            "ValueSource": "Property"
-          },
-          "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "DisplayLabel": {
-            "Value": "FullName",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
-            "ValueSource": "Constant"
-          }
-        },
         "SubBindings": [],
         "DefaultValueSource": "Property"
       }
@@ -337,7 +211,7 @@
         "Type": "asset",
         "PublishNullValues": false,
         "Key": {
-          "Value": "BindingsKey",
+          "Value": "N/A",
           "ValueSource": "Property"
         },
         "Values": {
@@ -348,20 +222,6 @@
           "name": {
             "Value": "AssetName",
             "ValueSource": "Property"
-          }
-        },
-        "Arguments": {
-          "ActivityName": {
-            "Value": "DisplayName",
-            "ValueSource": "Property"
-          },
-          "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "DisplayLabel": {
-            "Value": "FullName",
-            "ValueSource": "Constant"
           }
         },
         "SubBindings": [],
@@ -373,7 +233,7 @@
         "Type": "asset",
         "PublishNullValues": false,
         "Key": {
-          "Value": "BindingsKey",
+          "Value": "N/A",
           "ValueSource": "Property"
         },
         "Values": {
@@ -384,20 +244,6 @@
           "name": {
             "Value": "AssetName",
             "ValueSource": "Property"
-          }
-        },
-        "Arguments": {
-          "ActivityName": {
-            "Value": "DisplayName",
-            "ValueSource": "Property"
-          },
-          "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "DisplayLabel": {
-            "Value": "FullName",
-            "ValueSource": "Constant"
           }
         },
         "SubBindings": [],
@@ -425,7 +271,7 @@
         "Type": "process",
         "PublishNullValues": false,
         "Key": {
-          "Value": "BindingsKey",
+          "Value": "N/A",
           "ValueSource": "Property"
         },
         "Values": {
@@ -438,24 +284,6 @@
             "ValueSource": "Property"
           }
         },
-        "Arguments": {
-          "ActivityName": {
-            "Value": "DisplayName",
-            "ValueSource": "Property"
-          },
-          "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "DisplayLabel": {
-            "Value": "FullName",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
-            "ValueSource": "Constant"
-          }
-        },
         "SubBindings": [],
         "DefaultValueSource": "Property"
       }
@@ -465,27 +293,13 @@
         "Type": "queue",
         "PublishNullValues": false,
         "Key": {
-          "Value": "BindingsKey",
+          "Value": "N/A",
           "ValueSource": "Property"
         },
         "Values": {
           "folderPath": {
             "Value": "FolderPath",
             "ValueSource": "Property"
-          }
-        },
-        "Arguments": {
-          "ActivityName": {
-            "Value": "DisplayName",
-            "ValueSource": "Property"
-          },
-          "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "DisplayLabel": {
-            "Value": "FullName",
-            "ValueSource": "Constant"
           }
         },
         "SubBindings": [],
@@ -522,22 +336,6 @@
           "MaxJobsForActivation": {
             "Value": "MaxJobsForActivation",
             "ValueSource": "Property"
-          },
-          "ActivityName": {
-            "Value": "DisplayName",
-            "ValueSource": "Property"
-          },
-          "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "DisplayLabel": {
-            "Value": "FullName",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
-            "ValueSource": "Constant"
           }
         },
         "SubBindings": [],
@@ -549,7 +347,7 @@
         "Type": "asset",
         "PublishNullValues": false,
         "Key": {
-          "Value": "BindingsKey",
+          "Value": "N/A",
           "ValueSource": "Property"
         },
         "Values": {
@@ -562,20 +360,6 @@
             "ValueSource": "Property"
           }
         },
-        "Arguments": {
-          "ActivityName": {
-            "Value": "DisplayName",
-            "ValueSource": "Property"
-          },
-          "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "DisplayLabel": {
-            "Value": "FullName",
-            "ValueSource": "Constant"
-          }
-        },
         "SubBindings": [],
         "DefaultValueSource": "Property"
       }
@@ -585,7 +369,7 @@
         "Type": "asset",
         "PublishNullValues": false,
         "Key": {
-          "Value": "BindingsKey",
+          "Value": "N/A",
           "ValueSource": "Property"
         },
         "Values": {
@@ -598,20 +382,6 @@
             "ValueSource": "Property"
           }
         },
-        "Arguments": {
-          "ActivityName": {
-            "Value": "DisplayName",
-            "ValueSource": "Property"
-          },
-          "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "DisplayLabel": {
-            "Value": "FullName",
-            "ValueSource": "Constant"
-          }
-        },
         "SubBindings": [],
         "DefaultValueSource": "Property"
       }
@@ -621,27 +391,13 @@
         "Type": "queue",
         "PublishNullValues": false,
         "Key": {
-          "Value": "BindingsKey",
+          "Value": "N/A",
           "ValueSource": "Property"
         },
         "Values": {
           "folderPath": {
             "Value": "FolderPath",
             "ValueSource": "Property"
-          }
-        },
-        "Arguments": {
-          "ActivityName": {
-            "Value": "DisplayName",
-            "ValueSource": "Property"
-          },
-          "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "DisplayLabel": {
-            "Value": "FullName",
-            "ValueSource": "Constant"
           }
         },
         "SubBindings": [],
@@ -653,27 +409,13 @@
         "Type": "queue",
         "PublishNullValues": false,
         "Key": {
-          "Value": "BindingsKey",
+          "Value": "N/A",
           "ValueSource": "Property"
         },
         "Values": {
           "folderPath": {
             "Value": "FolderPath",
             "ValueSource": "Property"
-          }
-        },
-        "Arguments": {
-          "ActivityName": {
-            "Value": "DisplayName",
-            "ValueSource": "Property"
-          },
-          "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "DisplayLabel": {
-            "Value": "FullName",
-            "ValueSource": "Constant"
           }
         },
         "SubBindings": [],
@@ -685,7 +427,7 @@
         "Type": "process",
         "PublishNullValues": false,
         "Key": {
-          "Value": "BindingsKey",
+          "Value": "N/A",
           "ValueSource": "Property"
         },
         "Values": {
@@ -698,24 +440,6 @@
             "ValueSource": "Property"
           }
         },
-        "Arguments": {
-          "ActivityName": {
-            "Value": "DisplayName",
-            "ValueSource": "Property"
-          },
-          "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "DisplayLabel": {
-            "Value": "FullName",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
-            "ValueSource": "Constant"
-          }
-        },
         "SubBindings": [],
         "DefaultValueSource": "Property"
       }
@@ -725,27 +449,13 @@
         "Type": "process",
         "PublishNullValues": false,
         "Key": {
-          "Value": "BindingsKey",
+          "Value": "N/A",
           "ValueSource": "Property"
         },
         "Values": {
           "folderPath": {
             "Value": "FolderPath",
             "ValueSource": "Property"
-          }
-        },
-        "Arguments": {
-          "ActivityName": {
-            "Value": "DisplayName",
-            "ValueSource": "Property"
-          },
-          "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "DisplayLabel": {
-            "Value": "FullName",
-            "ValueSource": "Constant"
           }
         },
         "SubBindings": [],
@@ -757,7 +467,7 @@
         "Type": "bucket",
         "PublishNullValues": false,
         "Key": {
-          "Value": "BindingsKey",
+          "Value": "N/A",
           "ValueSource": "Property"
         },
         "Values": {
@@ -768,24 +478,6 @@
           "name": {
             "Value": "StorageBucketName",
             "ValueSource": "Property"
-          }
-        },
-        "Arguments": {
-          "ActivityName": {
-            "Value": "DisplayName",
-            "ValueSource": "Property"
-          },
-          "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "DisplayLabel": {
-            "Value": "FullName",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
-            "ValueSource": "Constant"
           }
         },
         "SubBindings": [],
@@ -797,7 +489,7 @@
         "Type": "bucket",
         "PublishNullValues": false,
         "Key": {
-          "Value": "BindingsKey",
+          "Value": "N/A",
           "ValueSource": "Property"
         },
         "Values": {
@@ -808,24 +500,6 @@
           "name": {
             "Value": "StorageBucketName",
             "ValueSource": "Property"
-          }
-        },
-        "Arguments": {
-          "ActivityName": {
-            "Value": "DisplayName",
-            "ValueSource": "Property"
-          },
-          "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "DisplayLabel": {
-            "Value": "FullName",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
-            "ValueSource": "Constant"
           }
         },
         "SubBindings": [],
@@ -837,7 +511,7 @@
         "Type": "bucket",
         "PublishNullValues": false,
         "Key": {
-          "Value": "BindingsKey",
+          "Value": "N/A",
           "ValueSource": "Property"
         },
         "Values": {
@@ -848,24 +522,6 @@
           "name": {
             "Value": "StorageBucketName",
             "ValueSource": "Property"
-          }
-        },
-        "Arguments": {
-          "ActivityName": {
-            "Value": "DisplayName",
-            "ValueSource": "Property"
-          },
-          "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "DisplayLabel": {
-            "Value": "FullName",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
-            "ValueSource": "Constant"
           }
         },
         "SubBindings": [],
@@ -877,7 +533,7 @@
         "Type": "bucket",
         "PublishNullValues": false,
         "Key": {
-          "Value": "BindingsKey",
+          "Value": "N/A",
           "ValueSource": "Property"
         },
         "Values": {
@@ -888,24 +544,6 @@
           "name": {
             "Value": "StorageBucketName",
             "ValueSource": "Property"
-          }
-        },
-        "Arguments": {
-          "ActivityName": {
-            "Value": "DisplayName",
-            "ValueSource": "Property"
-          },
-          "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "DisplayLabel": {
-            "Value": "FullName",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
-            "ValueSource": "Constant"
           }
         },
         "SubBindings": [],
@@ -917,7 +555,7 @@
         "Type": "bucket",
         "PublishNullValues": false,
         "Key": {
-          "Value": "BindingsKey",
+          "Value": "N/A",
           "ValueSource": "Property"
         },
         "Values": {
@@ -928,24 +566,6 @@
           "name": {
             "Value": "StorageBucketName",
             "ValueSource": "Property"
-          }
-        },
-        "Arguments": {
-          "ActivityName": {
-            "Value": "DisplayName",
-            "ValueSource": "Property"
-          },
-          "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "DisplayLabel": {
-            "Value": "FullName",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
-            "ValueSource": "Constant"
           }
         },
         "SubBindings": [],
@@ -957,7 +577,7 @@
         "Type": "bucket",
         "PublishNullValues": false,
         "Key": {
-          "Value": "BindingsKey",
+          "Value": "N/A",
           "ValueSource": "Property"
         },
         "Values": {
@@ -968,24 +588,6 @@
           "name": {
             "Value": "StorageBucketName",
             "ValueSource": "Property"
-          }
-        },
-        "Arguments": {
-          "ActivityName": {
-            "Value": "DisplayName",
-            "ValueSource": "Property"
-          },
-          "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "DisplayLabel": {
-            "Value": "FullName",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
-            "ValueSource": "Constant"
           }
         },
         "SubBindings": [],
@@ -1009,18 +611,6 @@
           "CronExpression": {
             "Value": "CronExpression",
             "ValueSource": "Property"
-          },
-          "ActivityName": {
-            "Value": "DisplayName",
-            "ValueSource": "Property"
-          },
-          "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "DisplayLabel": {
-            "Value": "FullName",
-            "ValueSource": "Constant"
           }
         },
         "SubBindings": [],
@@ -1032,7 +622,7 @@
         "Type": "queue",
         "PublishNullValues": false,
         "Key": {
-          "Value": "BindingsKey",
+          "Value": "N/A",
           "ValueSource": "Property"
         },
         "Values": {
@@ -1043,24 +633,6 @@
           "name": {
             "Value": "QueueName",
             "ValueSource": "Property"
-          }
-        },
-        "Arguments": {
-          "ActivityName": {
-            "Value": "DisplayName",
-            "ValueSource": "Property"
-          },
-          "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "DisplayLabel": {
-            "Value": "FullName",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
-            "ValueSource": "Constant"
           }
         },
         "SubBindings": [],

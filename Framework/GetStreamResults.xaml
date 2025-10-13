@@ -127,17 +127,17 @@
       <AssemblyReference>Newtonsoft.Json</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="548,957" sap2010:WorkflowViewState.IdRef="Sequence_8">
+  <Sequence sap:VirtualizedContainerService.HintSize="1626,1188" sap2010:WorkflowViewState.IdRef="Sequence_8">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message Fetch Stream" sap:VirtualizedContainerService.HintSize="548,175" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[in_Config(&quot;LogMessage_FetchStream&quot;).ToString()]" />
-    <ui:RetryScope DisplayName="Retry Fetch Stream" sap:VirtualizedContainerService.HintSize="548,759" sap2010:WorkflowViewState.IdRef="RetryScope_2" NumberOfRetries="[Cint(in_Config(&quot;RetryNumberFetchStream&quot;))]">
+    <ui:LogMessage DisplayName="Log Message Fetch Stream" sap:VirtualizedContainerService.HintSize="512,173" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[in_Config(&quot;LogMessage_FetchStream&quot;).ToString()]" />
+    <ui:RetryScope DisplayName="Retry Fetch Stream" sap:VirtualizedContainerService.HintSize="512,992" sap2010:WorkflowViewState.IdRef="RetryScope_2" NumberOfRetries="[Cint(in_Config(&quot;RetryNumberFetchStream&quot;))]">
       <ui:RetryScope.ActivityBody>
         <ActivityAction>
-          <TryCatch DisplayName="Try and Fetch Batch from Stream" sap:VirtualizedContainerService.HintSize="506,559" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+          <TryCatch DisplayName="Try and Fetch Batch from Stream" sap:VirtualizedContainerService.HintSize="470,794" sap2010:WorkflowViewState.IdRef="TryCatch_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -145,7 +145,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <TryCatch.Try>
-              <Sequence sap:VirtualizedContainerService.HintSize="468,326" sap2010:WorkflowViewState.IdRef="Sequence_9">
+              <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="468,351" sap2010:WorkflowViewState.IdRef="Sequence_9">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:String" Name="responseContent" />
                   <Variable x:TypeArguments="x:Int32" Name="statusCode" />
@@ -155,7 +155,7 @@
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" BodyFormat="application/json" DisplayName="Get Stream Results" EnableSSLVerification="True" EndPoint="[String.Format(&quot;{0}/api/v1/datasets/{1}/{2}/streams/{3}/results&quot;,in_Config(&quot;CommunicationsMiningBaseUrl&quot;), in_Config(&quot;CommunicationsMiningProjectName&quot;), in_config(&quot;CommunicationsMiningDatasetName&quot;), in_config(&quot;CommunicationsMiningStreamName&quot;))]" sap:VirtualizedContainerService.HintSize="434,103" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="GET" Result="[responseContent]" StatusCode="[statusCode]" TimeoutMS="6000">
+                <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" BodyFormat="application/json" DisplayName="Get Stream Results" EnableSSLVerification="True" EndPoint="[String.Format(&quot;{0}/api/v1/datasets/{1}/{2}/streams/{3}/results&quot;,in_Config(&quot;CommunicationsMiningBaseUrl&quot;), in_Config(&quot;CommunicationsMiningProjectName&quot;), in_config(&quot;CommunicationsMiningDatasetName&quot;), in_config(&quot;CommunicationsMiningStreamName&quot;))]" sap:VirtualizedContainerService.HintSize="434,102" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="GET" Result="[responseContent]" StatusCode="[statusCode]" TimeoutMS="6000">
                   <ui:HttpClient.Attachments>
                     <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                   </ui:HttpClient.Attachments>
@@ -163,9 +163,7 @@
                     <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                   </ui:HttpClient.Cookies>
                   <ui:HttpClient.Headers>
-                    <InArgument x:TypeArguments="x:String" x:Key="Authorization">
-                      <VisualBasicValue x:TypeArguments="x:String" ExpressionText="String.Format(&quot;Bearer {0}&quot;, new System.Net.NetworkCredential(&quot;&quot;,in_ApiToken).Password)" />
-                    </InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="Authorization">[String.Format("Bearer {0}", new System.Net.NetworkCredential("",in_ApiToken).Password)]</InArgument>
                   </ui:HttpClient.Headers>
                   <ui:HttpClient.Parameters>
                     <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
@@ -174,7 +172,7 @@
                     <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                   </ui:HttpClient.UrlSegments>
                 </ui:HttpClient>
-                <If Condition="[statusCode &lt;&gt; 200]" DisplayName="If No Success" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="If_1">
+                <If Condition="[statusCode &lt;&gt; 200]" DisplayName="If No Success" sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="If_1">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -208,7 +206,7 @@
                     </Sequence>
                   </If.Else>
                 </If>
-                <Assign DisplayName="Deserialize Response" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Assign_1">
+                <Assign DisplayName="Deserialize Response" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_1">
                   <Assign.To>
                     <OutArgument x:TypeArguments="ucasm:GetStreamResultsResponse">[out_CurrentBatch]</OutArgument>
                   </Assign.To>
@@ -230,18 +228,21 @@
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Catch Get transaction item" sap:VirtualizedContainerService.HintSize="422,260" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <Sequence DisplayName="Catch Get transaction item" sap:VirtualizedContainerService.HintSize="468,281" sap2010:WorkflowViewState.IdRef="Sequence_7">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:LogMessage DisplayName="Log Message Get transaction item faulted" sap:VirtualizedContainerService.HintSize="388,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[String.Format(in_config(&quot;LogMessage_FetchStreamFailed&quot;).ToString(), exception.Message, exception.Source)]" />
-                    <Rethrow DisplayName="Rethrow Get transaction item faulted" sap:VirtualizedContainerService.HintSize="388,25" sap2010:WorkflowViewState.IdRef="Rethrow_1" />
+                    <ui:LogMessage DisplayName="Log Message Get transaction item faulted" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[String.Format(in_config(&quot;LogMessage_FetchStreamFailed&quot;).ToString(), exception.Message, exception.Source)]" />
+                    <Rethrow DisplayName="Rethrow Get transaction item faulted" sap:VirtualizedContainerService.HintSize="434,48" sap2010:WorkflowViewState.IdRef="Rethrow_1" />
                   </Sequence>
                 </ActivityAction>
               </Catch>
             </TryCatch.Catches>
+            <TryCatch.Finally>
+              <Sequence DisplayName="Finally" sap2010:WorkflowViewState.IdRef="Sequence_13" />
+            </TryCatch.Finally>
           </TryCatch>
         </ActivityAction>
       </ui:RetryScope.ActivityBody>
