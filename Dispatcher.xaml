@@ -779,7 +779,7 @@
                           </Transition.Action>
                           <Transition.Condition>[SystemException is Nothing andAlso in_bool_LoadData]</Transition.Condition>
                         </Transition>
-                        <Transition DisplayName="T1" sap2010:WorkflowViewState.IdRef="Transition_13">
+                        <Transition DisplayName="Successful w/o Data Load" sap2010:WorkflowViewState.IdRef="Transition_13">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <av:PointCollection x:Key="ConnectorLocation">350.6,123.66666666666666 350.6,216.04 402,216.04 402,302 436.15,302 436.15,356</av:PointCollection>
